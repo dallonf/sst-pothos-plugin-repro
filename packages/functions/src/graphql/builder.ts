@@ -1,6 +1,9 @@
 import SchemaBuilder from "@pothos/core";
+import MyPlugin from "./MyPlugin";
 
-export const builder = new SchemaBuilder({});
+export const builder = new SchemaBuilder({
+  plugins: [MyPlugin],
+});
 
 builder.queryType({});
 builder.mutationType({});
